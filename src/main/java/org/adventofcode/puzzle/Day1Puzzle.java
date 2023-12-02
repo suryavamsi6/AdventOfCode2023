@@ -30,7 +30,6 @@ public class Day1Puzzle {
         while(line != null){
             String numberOnly= line.replaceAll("[^0-9]", "");
             String number = String.valueOf(numberOnly.charAt(0)) + String.valueOf(numberOnly.charAt(numberOnly.length()-1));
-            System.out.println(number + " "+ numberOnly);
             sumOfCalibration += Integer.parseInt(number);
             line = reader.readLine();
         }
@@ -76,7 +75,6 @@ public class Day1Puzzle {
             else {
                 number = IndexWordMap.convertWordToNumber(indexes.get(0).getMatchedWord()) + IndexWordMap.convertWordToNumber(indexes.get(0).getMatchedWord());
             }
-            System.out.println(line + "->" + number);
             sumOfCalibration += Integer.parseInt(number);
             line = reader.readLine();
         }

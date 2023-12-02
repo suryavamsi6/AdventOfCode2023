@@ -17,7 +17,7 @@ public class Day2Puzzle {
         };
     }
 
-    private static int getSumOfPossibleGamesPart1() throws IOException {
+    public static int getSumOfPossibleGamesPart1() throws IOException {
         boolean validGame;
         int sumOfValidGameId = 0;
         int maxRed = 12;
@@ -67,7 +67,7 @@ public class Day2Puzzle {
         return sumOfValidGameId;
     }
 
-    private static int getSumOfPossibleGamesPart2() throws IOException {
+    public static int getSumOfPossibleGamesPart2() throws IOException {
         int sumOfPowerOfSet = 0;
         int maxRed ;
         int maxBlue ;
