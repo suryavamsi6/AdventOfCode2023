@@ -23,7 +23,7 @@ public class Day2Puzzle {
         int maxRed = 12;
         int maxBlue = 14;
         int maxGreen = 13;
-        ArrayList<Integer> countList = new ArrayList<>();
+        ArrayList<Integer> countList;
         BufferedReader reader;
         reader = new BufferedReader(new FileReader("src/main/resources/puzzle2input.txt"));
         String line = reader.readLine();
@@ -68,12 +68,11 @@ public class Day2Puzzle {
     }
 
     private static int getSumOfPossibleGamesPart2() throws IOException {
-        boolean validGame;
         int sumOfPowerOfSet = 0;
         int maxRed ;
         int maxBlue ;
         int maxGreen ;
-        ArrayList<Integer> countList = new ArrayList<>();
+        ArrayList<Integer> countList;
         BufferedReader reader;
         reader = new BufferedReader(new FileReader("src/main/resources/puzzle2input.txt"));
         String line = reader.readLine();

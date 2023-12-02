@@ -47,7 +47,7 @@ public class Day1Puzzle {
         int sumOfCalibration = 0;
 
         while(line != null){
-            indexes = new ArrayList<IndexWordMap>();
+            indexes = new ArrayList<>();
             Pattern pattern = Pattern.compile("(one|two|three|four|five|six|seven|eight|nine)", Pattern.CASE_INSENSITIVE);
             Matcher matcher = pattern.matcher(line);
             while(matcher.find()){
@@ -69,7 +69,7 @@ public class Day1Puzzle {
             }
             Collections.sort(indexes);
             int size = indexes.size();
-            String number = null;
+            String number;
             if(size>1){
                 number = IndexWordMap.convertWordToNumber(indexes.get(0).getMatchedWord()) + IndexWordMap.convertWordToNumber(indexes.get(size-1).getMatchedWord());
             }
