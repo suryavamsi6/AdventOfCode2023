@@ -3,6 +3,7 @@ package org.adventofcode;
 
 import org.adventofcode.puzzle.Day1Puzzle;
 import org.adventofcode.puzzle.Day2Puzzle;
+import org.adventofcode.puzzle.Day3Puzzle;
 
 import java.io.IOException;
 
@@ -26,6 +27,9 @@ public class Main {
                 case 2:
                     result = Day2Puzzle.getSumOfPossibleGames(part);
                     break;
+                case 3:
+                    result = Day3Puzzle.gearRatio(part);
+                    break;
                 default:
                     System.out.println("Enter a Puzzle Number!!");
 
@@ -41,6 +45,9 @@ public class Main {
         System.out.println("Day 2:");
         System.out.println("    Part 1:" + Day2Puzzle.getSumOfPossibleGamesPart1());
         System.out.println("    Part 2:" + Day2Puzzle.getSumOfPossibleGamesPart2());
+        System.out.println("Day 3:");
+        System.out.println("    Part 1:" + Day3Puzzle.getSumOfPartsPart1());
+        System.out.println("    Part 2:" + Day3Puzzle.getSumOfGearRatioPart2());
     }
 
 
