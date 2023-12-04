@@ -4,13 +4,12 @@ package org.adventofcode;
 import org.adventofcode.puzzle.Day1Puzzle;
 import org.adventofcode.puzzle.Day2Puzzle;
 import org.adventofcode.puzzle.Day3Puzzle;
+import org.adventofcode.puzzle.Day4Puzzle;
 
 import java.io.IOException;
 
 
 public class Main {
-
-
 
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
@@ -30,6 +29,9 @@ public class Main {
                 case 3:
                     result = Day3Puzzle.gearRatio(part);
                     break;
+                case 4:
+                    result = Day4Puzzle.scratchCards(part);
+                    break;
                 default:
                     System.out.println("Enter a Puzzle Number!!");
 
@@ -48,6 +50,9 @@ public class Main {
         System.out.println("Day 3:");
         System.out.println("    Part 1:" + Day3Puzzle.getSumOfPartsPart1());
         System.out.println("    Part 2:" + Day3Puzzle.getSumOfGearRatioPart2());
+        System.out.println("Day 4:");
+        System.out.println("    Part 1:" + Day4Puzzle.getSumOfWinningCardsPart1());
+        System.out.println("    Part 2:" + Day4Puzzle.getSumOfScratchCardsPart2());
     }
 
 
