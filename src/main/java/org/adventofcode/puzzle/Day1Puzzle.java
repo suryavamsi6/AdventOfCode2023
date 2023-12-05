@@ -23,7 +23,7 @@ public class Day1Puzzle {
 
     public static int sumOfCalibrationValuesPart1() throws IOException {
         BufferedReader reader;
-        reader = new BufferedReader(new FileReader("src/main/resources/puzzle1input.txt"));
+        reader = new BufferedReader(new FileReader("src/main/resources/puzzle1input"));
         String line = reader.readLine();
         int sumOfCalibration = 0;
 
@@ -41,7 +41,7 @@ public class Day1Puzzle {
         ArrayList<IndexWordMap> indexes;
         IndexWordMap indexWordMap;
         BufferedReader reader;
-        reader = new BufferedReader(new FileReader("src/main/resources/puzzle1input.txt"));
+        reader = new BufferedReader(new FileReader("src/main/resources/puzzle1input"));
         String line = reader.readLine();
         int sumOfCalibration = 0;
 

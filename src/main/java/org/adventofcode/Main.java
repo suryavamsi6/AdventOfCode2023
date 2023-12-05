@@ -1,12 +1,10 @@
 package org.adventofcode;
 
 
-import org.adventofcode.puzzle.Day1Puzzle;
-import org.adventofcode.puzzle.Day2Puzzle;
-import org.adventofcode.puzzle.Day3Puzzle;
-import org.adventofcode.puzzle.Day4Puzzle;
+import org.adventofcode.puzzle.*;
 
 import java.io.IOException;
+import java.math.BigInteger;
 
 
 public class Main {
@@ -18,6 +16,7 @@ public class Main {
         else {
             int puzzleNumber = Integer.parseInt(args[0]);
             int result = 0;
+            BigInteger bigIntegerResult = null;
             int part = Integer.parseInt(args[1]);
             switch (puzzleNumber) {
                 case 1:
@@ -32,11 +31,14 @@ public class Main {
                 case 4:
                     result = Day4Puzzle.scratchCards(part);
                     break;
+                case 5:
+                    bigIntegerResult = Day5Puzzle.gardeningSeed(part);
+                    break;
                 default:
                     System.out.println("Enter a Puzzle Number!!");
 
             }
-            System.out.println(result);
+            System.out.println(bigIntegerResult);
         }
     }
 
@@ -53,6 +55,9 @@ public class Main {
         System.out.println("Day 4:");
         System.out.println("    Part 1:" + Day4Puzzle.getSumOfWinningCardsPart1());
         System.out.println("    Part 2:" + Day4Puzzle.getSumOfScratchCardsPart2());
+        System.out.println("Day 4:");
+        System.out.println("    Part 1:" + Day5Puzzle.getLowestLocationPart1());
+        System.out.println("    Part 2:" + Day5Puzzle.getLowestLocationForRangePart2());
     }
 
 

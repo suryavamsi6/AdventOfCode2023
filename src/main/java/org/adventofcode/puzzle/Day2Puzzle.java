@@ -25,7 +25,7 @@ public class Day2Puzzle {
         int maxGreen = 13;
         ArrayList<Integer> countList;
         BufferedReader reader;
-        reader = new BufferedReader(new FileReader("src/main/resources/puzzle2input.txt"));
+        reader = new BufferedReader(new FileReader("src/main/resources/puzzle2input"));
         String line = reader.readLine();
         while(line != null){
             validGame = true;
@@ -74,7 +74,7 @@ public class Day2Puzzle {
         int maxGreen ;
         ArrayList<Integer> countList;
         BufferedReader reader;
-        reader = new BufferedReader(new FileReader("src/main/resources/puzzle2input.txt"));
+        reader = new BufferedReader(new FileReader("src/main/resources/puzzle2input"));
         String line = reader.readLine();
         while(line != null){
             maxBlue = 0;
