@@ -34,6 +34,9 @@ public class Main {
                 case 5:
                     bigIntegerResult = Day5Puzzle.gardeningSeed(part);
                     break;
+                case 6:
+                    bigIntegerResult = Day6Puzzle.waitForIt(part);
+                    break;
                 default:
                     System.out.println("Enter a Puzzle Number!!");
 
