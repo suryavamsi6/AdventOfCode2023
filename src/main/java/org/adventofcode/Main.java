@@ -37,11 +37,14 @@ public class Main {
                 case 6:
                     bigIntegerResult = Day6Puzzle.waitForIt(part);
                     break;
+                case 7:
+                    result = Day7Puzzle.camelCards(part);
+                    break;
                 default:
                     System.out.println("Enter a Puzzle Number!!");
 
             }
-            System.out.println(bigIntegerResult);
+            System.out.println(result);
         }
     }
 
@@ -58,9 +61,16 @@ public class Main {
         System.out.println("Day 4:");
         System.out.println("    Part 1:" + Day4Puzzle.getSumOfWinningCardsPart1());
         System.out.println("    Part 2:" + Day4Puzzle.getSumOfScratchCardsPart2());
-        System.out.println("Day 4:");
+        System.out.println("Day 5:");
         System.out.println("    Part 1:" + Day5Puzzle.getLowestLocationPart1());
         System.out.println("    Part 2:" + Day5Puzzle.getLowestLocationForRangePart2());
+        System.out.println("Day 6:");
+        System.out.println("    Part 1:" + Day6Puzzle.getMarginOfErrorPart1());
+        System.out.println("    Part 2:" + Day6Puzzle.getMarginOfErrorPart2());
+        System.out.println("Day 7:");
+        System.out.println("    Part 1:" + Day7Puzzle.getTotalWinningsPart1());
+        System.out.println("    Part 2:" + Day7Puzzle.getTotalWinningsPart2());
+
     }
 
 

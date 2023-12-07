@@ -18,7 +18,7 @@ public class Day6Puzzle {
         };
     }
 
-    private static BigInteger getMarginOfErrorPart1() throws IOException {
+    public static BigInteger getMarginOfErrorPart1() throws IOException {
         BufferedReader reader;
         reader = new BufferedReader(new FileReader("src/main/resources/puzzle6input"));
         String line = reader.readLine();
@@ -50,7 +50,7 @@ public class Day6Puzzle {
         return BigInteger.valueOf(marginOfError);
     }
 
-    private static BigInteger getMarginOfErrorPart2() throws IOException {
+    public static BigInteger getMarginOfErrorPart2() throws IOException {
         BufferedReader reader;
         reader = new BufferedReader(new FileReader("src/main/resources/puzzle6input"));
         String line = reader.readLine();
