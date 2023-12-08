@@ -10,12 +10,12 @@ import java.math.BigInteger;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        if(args.length == 0){
+        if (args.length == 0) {
             runAllPuzzles();
-        }
-        else {
+        } else {
             int puzzleNumber = Integer.parseInt(args[0]);
             int result = 0;
+            long longResult= 0;
             BigInteger bigIntegerResult = null;
             int part = Integer.parseInt(args[1]);
             switch (puzzleNumber) {
@@ -40,11 +40,14 @@ public class Main {
                 case 7:
                     result = Day7Puzzle.camelCards(part);
                     break;
+                case 8:
+                    longResult = Day8Puzzle.hauntedWasteLand(part);
+                    break;
                 default:
                     System.out.println("Enter a Puzzle Number!!");
 
             }
-            System.out.println(result);
+            System.out.println(longResult);
         }
     }
 
@@ -70,6 +73,9 @@ public class Main {
         System.out.println("Day 7:");
         System.out.println("    Part 1:" + Day7Puzzle.getTotalWinningsPart1());
         System.out.println("    Part 2:" + Day7Puzzle.getTotalWinningsPart2());
+        System.out.println("Day 8:");
+        System.out.println("    Part 1:" + Day8Puzzle.getShortestRoutePart1());
+        System.out.println("    Part 2:" + Day8Puzzle.getShortestRoutePart2());
 
     }
 
