@@ -43,6 +43,9 @@ public class Main {
                 case 8:
                     longResult = Day8Puzzle.hauntedWasteLand(part);
                     break;
+                case 9:
+                    longResult = Day9Puzzle.mirageMaintenance(part);
+                    break;
                 default:
                     System.out.println("Enter a Puzzle Number!!");
 
@@ -76,6 +79,9 @@ public class Main {
         System.out.println("Day 8:");
         System.out.println("    Part 1:" + Day8Puzzle.getShortestRoutePart1());
         System.out.println("    Part 2:" + Day8Puzzle.getShortestRoutePart2());
+        System.out.println("Day 9:");
+        System.out.println("    Part 1:" + Day9Puzzle.getSumOfExtrapolatesPart1());
+        System.out.println("    Part 2:" + Day9Puzzle.getSumOfExtrapolatesPart2());
 
     }
 
