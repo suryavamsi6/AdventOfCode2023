@@ -46,11 +46,14 @@ public class Main {
                 case 9:
                     longResult = Day9Puzzle.mirageMaintenance(part);
                     break;
+                case 10:
+                    result = Day10Puzzle.pipeMaze(part);
+                    break;
                 default:
                     System.out.println("Enter a Puzzle Number!!");
 
             }
-            System.out.println(longResult);
+            System.out.println(result);
         }
     }
 
@@ -82,6 +85,9 @@ public class Main {
         System.out.println("Day 9:");
         System.out.println("    Part 1:" + Day9Puzzle.getSumOfExtrapolatesPart1());
         System.out.println("    Part 2:" + Day9Puzzle.getSumOfExtrapolatesPart2());
+        System.out.println("Day 10:");
+        System.out.println("    Part 1:" + Day10Puzzle.getFarthestDistancePart1());
+        System.out.println("    Part 2:" + Day10Puzzle.getEnclosedTilePart2());
 
     }
 
